@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "GetProductbyId";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+@model DataAccess.ProductNetFramework.DTO.Product
+<div id="form-group">
+    <label for="email">Tên sản phẩm</label>
+    <input type="hidden" class="form-control" value="@Model.Id" id="txtProductId" />
+    <input type="text" class="form-control" value="@Model.Name" id="txtProductName" />
+</div>
+<div id="form-group">
+    <label for="email">Giá sản phẩm</label>
+    <input type="text" class="form-control" value="@Model.Price" id="txtProductPrice" />
+</div>
+
+<button type="button" class="btn btn-default" id="btnSave">Search</button>
+<button type="button" class="btn btn-default" id="btnBack">Back</button>
+
+<script>
+    $(document).ready(function () {
+
+        $("#btnSave").click(function () {
+            ProductInsertUpdate()
+        })
+
+        $("#btnBack").click(function () {
+            window.location.href = "/Product"
+        })
+    });
+
+    function ProductInsertUpdate() {
+        var input_data = {
+            Id: $("#txtProductId").val(),
+            Name: $("#txtProductName").val(),
+            Price: $("#txtProductPrice").val()
+        }
+
+        $.ajax({
+            url: '@Url.Action("ProductInsertUpdate", "Product")',
+            type: 'POST',
+            data: input_data,
+            dataType: 'json',
+            success: function (result) {
+                alert(result.returnMessage);
+            },
+            error: function (data) {
+                alert('Error adding product.');
+            }
+        });
+    }
+</script>

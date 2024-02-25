@@ -1,0 +1,6 @@
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\bin\Debug\MyShop.Common.dll
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\bin\Debug\MyShop.Common.pdb
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\obj\Debug\MyShop.Common.csproj.AssemblyReference.cache
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\obj\Debug\MyShop.Common.csproj.CoreCompileInputs.cache
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\obj\Debug\MyShop.Common.dll
+C:\Users\V\Documents\Khóa C#\Bt1\MyShop.Common\obj\Debug\MyShop.Common.pdb

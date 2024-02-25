@@ -1,0 +1,96 @@
+﻿@model List<DataAccess.ProductNetFramework.DTO.ShoppingCart>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Blank Page</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Blank Page</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Title</h3>
+
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                        <th>Mua Hàng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            var totalAmount = item.Price * item.Quality;
+                            <tr>
+                                <td>@item.ProductID</td>
+                                <td>@item.ProductName</td>
+                                <td>@item.Price</td>
+                                
+                                <td>
+                                    <input class="form-control" type="number" 
+                                           data-productid="@item.ProductID"
+                                        data-productname="@item.ProductName"
+                                        data-price="@item.Price"
+                                        onchange="UpdateCartItem(this)" id ="txtQuantity" value="@item.Quality" style="width:50%"  />
+                                </td>
+                                <td>@totalAmount</td>
+
+                                <td>
+                                    <a class="btn btn-danger btn-sm"
+                                       data-productid="@item.ProductID"
+                                       data-productname="@item.ProductName"
+                                       data-price="@item.Price"
+                                       @*this là lấy hết tất cả thuộc tính như class, data trong thẻ đó*@
+                                       onclick="RemoveItemFromCart(this)">
+                                        <i class="fas fa-trash-alt">
+                                            Xóa
+                                        </i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            Footer
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->
+
+

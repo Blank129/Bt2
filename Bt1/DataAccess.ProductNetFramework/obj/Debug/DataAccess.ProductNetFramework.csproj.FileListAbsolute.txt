@@ -1,0 +1,9 @@
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\obj\Debug\DataAccess.ProductNetFramework.csproj.AssemblyReference.cache
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\obj\Debug\DataAccess.ProductNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\bin\Debug\DataAccess.ProductNetFramework.dll
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\bin\Debug\DataAccess.ProductNetFramework.pdb
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\bin\Debug\MyShop.Common.dll
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\bin\Debug\MyShop.Common.pdb
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\obj\Debug\DataAccess.ProductNetFramework.csproj.CopyComplete
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\obj\Debug\DataAccess.ProductNetFramework.dll
+C:\Users\V\Documents\Khóa C#\Bt1\DataAccess.ProductNetFramework\obj\Debug\DataAccess.ProductNetFramework.pdb
